@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.cam123.mods.discord_bridge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CanJoinMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

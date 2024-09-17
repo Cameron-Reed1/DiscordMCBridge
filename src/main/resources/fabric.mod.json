@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "discord-bridge",
+  "version": "${version}",
+  "name": "Discord MC Bridge",
+  "description": "Bridges the gap between Discord and Minecraft",
+  "authors": [ "Cameron Reed" ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/discord_bridge/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "dev.cam123.mods.discord_bridge.DiscordMCBridge"
+    ],
+    "server": [
+      "dev.cam123.mods.discord_bridge.DiscordMCBridgeServer"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "discord_bridge.mixins.server.json",
+      "environment": "server"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
